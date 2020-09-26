@@ -17,11 +17,12 @@
             alert("invalid day");
 
         }
-        else {
-          if (m <=0 || m >12) {
+        else if (m <=0 || m >12) {
             alert("invalid month");
 
-          }
+        }
+        else {
+            return false;
         }
       }
       function getAkanName(){
@@ -63,7 +64,7 @@
           </div>
     </div>
     <div class="col-md-7">
-        <form name="akanForm" action="index.html" onsubmit ="return validateForm()" method="POST" >
+        <form name="akanForm" action="" onsubmit ="return validateForm()" method="POST" >
           <fieldset>
             <legend>Fill the Form</legend>
             <strong>Enter your Birthday:</strong><br>
