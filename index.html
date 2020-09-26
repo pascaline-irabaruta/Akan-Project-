@@ -20,23 +20,26 @@
         </div>
     </div>
     <form name="akanForm" action="#" method="POST" >
-      <strong>Enter your Birthday:</strong><br>
-      <br>
-      Day:<input type="number" name="days" maxlength="2" ><br>
-      <br>
-      Month:<input type="number" name="months" maxlength="2" ><br>
-      <br>
-      year:<input type="number" name="years" maxlength="4" ><br>
-      <br>
-      <br>
-      <strong> Choose your Gender:</strong>
-      <select name="gender" required>
-        <option value="male">male</option>
-        <option value="female">female</option>
-      </select><br>
-      <br>
-      <input type="submit" onclick="return getAkanName()" value="check Akan name">
-      <button type="reset" >clear the form</button>
+      <fieldset>
+        <legend>Fill the Form</legend>
+        <strong>Enter your Birthday:</strong><br>
+        <br>
+        Day:<input type="number" name="days" maxlength="2" ><br>
+        <br>
+        Month:<input type="number" name="months" maxlength="2" ><br>
+        <br>
+        year:<input type="number" name="years" maxlength="4" ><br>
+        <br>
+        <br>
+        <strong> Choose your Gender:</strong>
+        <select name="gender" required>
+          <option value="male">male</option>
+          <option value="female">female</option>
+        </select><br>
+        <br>
+        <input type="submit" onclick="return getAkanName()" value="check Akan name">
+        <button type="reset" >clear the form</button>
+      </fieldset>
     </form>
     <p id="akan"> </p>
   </body>
