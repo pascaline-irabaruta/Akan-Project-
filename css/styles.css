@@ -8,9 +8,10 @@ span {
   padding: 80px;
   color: darkgray;
 }
-form {
-  padding-bottom: 20px
-  border: 2px solid darkgray;
+fieldset {
+  border: 1px solid gray;
+  margin: 1px;
+  padding: 10px;
 }
 .jumbotron
 {
