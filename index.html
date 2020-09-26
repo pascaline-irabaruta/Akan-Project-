@@ -10,6 +10,20 @@
         var d = document.forms["akanForm"]["days"].value;
         var m = document.forms["akanForm"]["months"].value;
         var y = document.forms["akanForm"]["years"].value;
+        if ((d==null||d=="")&&(m==null||m=="")&&(y==null||y=="")){
+            alert("please fill every field of the form");
+        }
+        else if (d <=0 || d >31) {
+            alert("invalid day");
+
+        }
+        else if (m <=0 || m >12) {
+            alert("invalid month");
+
+        }
+        else {
+            return false;
+        }
       }
     </script>
   </head>
