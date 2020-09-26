@@ -5,6 +5,20 @@ span {
   color: darkred;
 }
 .col-md-7 {
-  padding: 60px;
+  padding: 80px;
   color: darkgray;
+}
+form {
+  padding-bottom: 20px
+  border: 2px solid darkgray;
+}
+.jumbotron
+{
+  padding: 60px;
+}
+em{
+  font-weight: bold;
+}
+h2{
+  font-weight:bolder;
 }

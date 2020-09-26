@@ -32,17 +32,17 @@
         var cc =parseInt(y.slice(0,2));
         var yy =parseInt(y.slice(2,4));
         var g = document.forms["akanForm"]["gender"].value;
-        var d = Math.round( ( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd )%7);
+        var d = Math.floor( ( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd )%7);
         var maleArray=[ "Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
         var femaleArray=[" Akosua"," Adwoa","Abenaa","Akua","Yaa","Afua"," Ama"];
             for (i = 0; i < maleArray.length; i++) {
                 if(d==i && g=="male"){
-                    return (document.getElementById("akan").innerHTML="Your Akan name is " +maleArray[d]+"");
+                    return (document.getElementById("akan").innerHTML="Your Akan name is " +maleArray[d]+"!");
                 }
             }
             for (i = 0; i < femaleArray.length; i++){
                 if(d==i && g=="female"){
-                    return (document.getElementById("akan").innerHTML="Your Akan name is " +femaleArray[d]+"");
+                    return (document.getElementById("akan").innerHTML="Your Akan name is " +femaleArray[d]+"!");
                 }
             }
           }
@@ -54,8 +54,7 @@
         <div class="col-md-5">
           <div class="jumbotron">
             <h1><span>A</span>kan <span>N</span>amer</h1>
-            <p>Most people do know when their birthdays are, but some might not know what day of the week they were born.<br>
-              Akan Namer is a web application that is going to take in your birthday and calculates the day of the week <br>
+            <p>Akan Namer is a web application that is going to take in your birthday and calculates the day of the week <br>
               you were born and then depending on your gender it gives you a corresponding Akan Name.<br>
               Akan names are derived from Ghanian culture.For girls;Sunday: Akosua,Monday: Adwoa,Tuesday: Abenaa,Wednesday: Akua,<br>
               Thursday:  Yaa,Friday: Afua and Saturday: Ama. For boys;Sunday: Kwasi,Monday: Kwadwo,Tuesday: Kwabena, Wednesday: Kwaku,<br>
@@ -87,6 +86,7 @@
             <button type="reset" >clear the form</button>
           </fieldset>
         </form>
+        <br>
         <h2 id="akan"> </h2>
       </div>
         </div>
