@@ -4,3 +4,7 @@ body {
 span {
   color: darkred;
 }
+.col-md-7 {
+  padding: 60px;
+  color: darkgray;
+}
