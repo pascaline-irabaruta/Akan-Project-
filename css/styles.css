@@ -2,6 +2,9 @@ body {
   background-color: darkred;
   font-family: cursive;
 }
+h1 {
+  font-weight: bolder;
+}
 span {
   color: darkred;
 }
