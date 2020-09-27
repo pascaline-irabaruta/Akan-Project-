@@ -27,7 +27,8 @@ The project takes in the user's credentials that are entered through the form an
 * The program checks if the day entered is not less or equal to zero and not greater than 31
 * The program ckecks if the month entered is not less or equal to zero and not greater than 12
 * The program uses this formula ( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd )%7 to calculate the day.
-   where cc: is the century,mm: the month number,yy: the year and dd the day of the month.
+   where cc: is the century,mm: the month number,yy: the year and dd: the day of the month.
+* Then the program uses arrays containing names to give a name to the corresponding day of the week.
    
    
 ## Technologies used
