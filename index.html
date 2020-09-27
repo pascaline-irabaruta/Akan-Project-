@@ -54,42 +54,44 @@
         <div class="col-md-5">
           <div class="jumbotron">
             <h1><span>A</span>kan <span>N</span>amer</h1>
-            <p>Akan Namer is a web application that is going to take in your birthday and calculates the day of the week <br>
+            <p>Akan Namer is a web application that is going to take in your birthday and calculates the day of the week
               you were born and then depending on your gender it gives you a corresponding Akan Name.<br>
-              Akan names are derived from Ghanian culture.For girls;Sunday: Akosua,Monday: Adwoa,Tuesday: Abenaa,Wednesday: Akua,<br>
-              Thursday:  Yaa,Friday: Afua and Saturday: Ama. For boys;Sunday: Kwasi,Monday: Kwadwo,Tuesday: Kwabena, Wednesday: Kwaku,<br>
-              Thursday:  Yaw,Friday: Kofi,and Saturday: Kwame.<br>
+              Akan names are derived from Ghanian culture.<br><br>
+              <span>For girls</span>;Sunday: Akosua,Monday: Adwoa,Tuesday: Abenaa,Wednesday: Akua,<br>
+              Thursday:  Yaa,Friday: Afua and Saturday: Ama. <br><span>For boys</span>;Sunday: Kwasi,Monday: Kwadwo,
+              Tuesday: Kwabena, Wednesday: Kwaku,<br>
+              Thursday:  Yaw,Friday: Kofi,and Saturday: Kwame.<br><br>
               <em>Fill out the form and get to know your Akan name!</em>
             </p>
           </div>
-    </div>
-    <div class="col-md-7">
-        <form name="akanForm" action="" onsubmit ="return validateForm()" method="POST" >
-          <fieldset>
-            <legend>Fill the Form</legend>
-            <strong>Enter your Birthday:</strong><br>
-            <br>
-            Day:<input type="number" name="days" maxlength="2" ><br>
-            <br>
-            Month:<input type="number" name="months" maxlength="2" ><br>
-            <br>
-            year:<input type="number" name="years" maxlength="4" ><br>
-            <br>
-            <br>
-            <strong> Choose your Gender:</strong>
-            <select name="gender" required>
-              <option value="male">male</option>
-              <option value="female">female</option>
-            </select><br>
-            <br>
-            <input type="submit" onclick="return getAkanName()" value="check Akan name">
-            <button type="reset" >clear the form</button>
-          </fieldset>
-        </form>
-        <br>
-        <h2 id="akan"> </h2>
-      </div>
+        </div>
+        <div class="col-md-7">
+          <form name="akanForm" action="" onsubmit ="return validateForm()" >
+            <fieldset>
+              <legend>Fill the Form</legend>
+              <strong>Enter your Birthday:</strong><br>
+              <br>
+              Day:<input type="number" name="days" maxlength="2" placeholder="enter a day of the month" ><br>
+              <br>
+              Month:<input type="number" name="months" maxlength="2" placeholder="enter a month"><br>
+              <br>
+              year:<input type="number" name="years" maxlength="4" placeholder="enter a year"><br>
+              <br>
+              <br>
+              <strong> Choose your Gender:</strong>
+              <select name="gender" >
+                <option value="male">male</option>
+                <option value="female">female</option>
+              </select><br>
+              <br>
+              <input type="submit" onclick="return getAkanName()" value="check Akan name">
+              <button type="reset" >clear the form</button>
+            </fieldset>
+          </form>
+          <br>
+          <h2 id="akan"> </h2>
         </div>
       </div>
+    </div>
   </body>
 </html>
